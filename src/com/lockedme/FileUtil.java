@@ -43,12 +43,10 @@ public class FileUtil {
 				isDeleted = true; //making isDeleted variable value "true" to break out of for loop
 				break;
 			}
-			else 
-			{
-				System.out.println("File not found\nPlease enter the file name from list of files ");
-				break;
-			}
-		
+		}
+		if (isDeleted == false)
+		{
+			System.out.println("File not found\nPlease enter the file name from list of files ");
 		}
 		files.clear();
 		return isDeleted;
